@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{FULL_NAME}} • Portfolio</title>
+  <title>Niranjan S • Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav sticky">
       <div class="nav-left">
-        <a href="#hero" class="nav-logo">&gt;_ {{FULL_NAME}}</a>
+        <a href="#hero" class="nav-logo">&gt;_ Niranjan S</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span class="nav-toggle-bar"></span>
@@ -32,12 +32,14 @@
       <div class="hero-inner">
         <div class="hero-text">
           <p class="hero-prefix">console.log("Hello, world");</p>
-          <h1 class="hero-title">{{FULL_NAME}}</h1>
-          <h2 class="hero-role">{{CURRENT_ROLE}}</h2>
-          <p class="hero-tagline">{{SHORT_TAGLINE}}</p>
+          <h1 class="hero-title">Niranjan S</h1>
+          <h2 class="hero-role">Systems Engineer</h2>
+          <p class="hero-tagline">
+            Systems engineer who enjoys turning complex problems into clean, reliable solutions.
+          </p>
           <p class="hero-meta">
             <span class="bullet"></span>
-            <span class="hero-location">{{LOCATION}}</span>
+            <span class="hero-location">Amaravati</span>
           </p>
           <div class="hero-cta">
             <a href="#projects" class="btn btn-primary">view_projects()</a>
@@ -53,10 +55,10 @@
           </div>
           <div class="terminal-body">
             <p><span class="prompt">$</span> cat profile.txt</p>
-            <p><span class="caret-line">name:</span> {{FULL_NAME}}</p>
-            <p><span class="caret-line">role:</span> {{CURRENT_ROLE}}</p>
-            <p><span class="caret-line">location:</span> {{LOCATION}}</p>
-            <p><span class="caret-line">interests:</span> {{HOBBIES}}</p>
+            <p><span class="caret-line">name:</span> Niranjan S</p>
+            <p><span class="caret-line">role:</span> Systems Engineer</p>
+            <p><span class="caret-line">location:</span> Amaravati</p>
+            <p><span class="caret-line">interests:</span> Photography, Football</p>
           </div>
         </div>
       </div>
@@ -72,10 +74,10 @@
         <article class="card">
           <h3 class="card-title">short.bio</h3>
           <p class="card-text">
-            {{SHORT_TAGLINE}} A driven engineer focused on building reliable, performant systems and thoughtful user experiences.
+            Hardworking systems engineer in training, focused on building dependable software with a strong foundation in computer science fundamentals.
           </p>
           <p class="card-text">
-            Passionate about {{CORE_CONCEPTS}} and applying them to real-world products with clean, maintainable code.
+            Enjoys designing efficient solutions around DBMS and DSA, and applying them to real-world products that feel fast, simple, and trustworthy.
           </p>
         </article>
         <article class="card">
@@ -83,15 +85,15 @@
           <ul class="kv-list">
             <li>
               <span class="kv-key">university</span>
-              <span class="kv-value">{{UNIVERSITY_NAME}}</span>
+              <span class="kv-value">VIT-AP</span>
             </li>
             <li>
               <span class="kv-key">degree</span>
-              <span class="kv-value">{{DEGREE_MAJOR}}</span>
+              <span class="kv-value">BTECH</span>
             </li>
             <li>
               <span class="kv-key">grad_year</span>
-              <span class="kv-value">{{GRAD_YEAR}}</span>
+              <span class="kv-value">2028</span>
             </li>
           </ul>
         </article>
@@ -108,26 +110,26 @@
       <div class="grid three-columns">
         <article class="card">
           <h3 class="card-title">languages[]</h3>
-          <p class="card-text">{{PROGRAMMING_LANGUAGES}}</p>
+          <p class="card-text">Python, Java, C, C++</p>
         </article>
         <article class="card">
           <h3 class="card-title">tools_platforms[]</h3>
-          <p class="card-text">{{FRAMEWORKS_TOOLS}}</p>
+          <p class="card-text">GitHub, Linux, VS Code</p>
         </article>
         <article class="card">
           <h3 class="card-title">core_concepts[]</h3>
-          <p class="card-text">{{CORE_CONCEPTS}}</p>
+          <p class="card-text">DBMS, DSA, Object-Oriented Design, Operating Systems</p>
         </article>
       </div>
 
       <div class="grid two-columns skills-secondary">
         <article class="card">
           <h3 class="card-title">soft_skills[]</h3>
-          <p class="card-text">{{SOFT_SKILLS}}</p>
+          <p class="card-text">Communication, teamwork, adaptability, mentorship mindset</p>
         </article>
         <article class="card">
           <h3 class="card-title">hobbies[]</h3>
-          <p class="card-text">{{HOBBIES}}</p>
+          <p class="card-text">Photography, Football, tech blogging, tinkering with side projects</p>
         </article>
       </div>
     </section>
@@ -143,28 +145,34 @@
         <article class="card project-card">
           <header class="project-header">
             <span class="project-badge">#01</span>
-            <h3 class="card-title">{{PROJECT_1_NAME}}</h3>
+            <h3 class="card-title">AlgoVision</h3>
           </header>
-          <p class="card-text">{{PROJECT_1_DESC}}</p>
-          <p class="project-meta">// Tech: {{PROGRAMMING_LANGUAGES}}</p>
+          <p class="card-text">
+            An interactive web-based visualizer for classic data structures and algorithms, helping students step through operations like sorting, searching, and graph traversal in real time.
+          </p>
+          <p class="project-meta">// Tech: Python, JavaScript, C++</p>
         </article>
 
         <article class="card project-card">
           <header class="project-header">
             <span class="project-badge">#02</span>
-            <h3 class="card-title">{{PROJECT_2_NAME}}</h3>
+            <h3 class="card-title">CampusHub DB</h3>
           </header>
-          <p class="card-text">{{PROJECT_2_DESC}}</p>
-          <p class="project-meta">// Tech: {{FRAMEWORKS_TOOLS}}</p>
+          <p class="card-text">
+            A mini campus management platform with role-based access that manages students, courses, and attendance using a well-normalized relational schema and optimized queries.
+          </p>
+          <p class="project-meta">// Tech: Java, SQL, DBMS concepts</p>
         </article>
 
         <article class="card project-card">
           <header class="project-header">
             <span class="project-badge">#03</span>
-            <h3 class="card-title">{{PROJECT_3_NAME}}</h3>
+            <h3 class="card-title">MatchDay Analytics</h3>
           </header>
-          <p class="card-text">{{PROJECT_3_DESC}}</p>
-          <p class="project-meta">// Focus: {{CORE_CONCEPTS}}</p>
+          <p class="card-text">
+            A stats dashboard that tracks football matches, aggregates player performance metrics, and visualizes trends to explore how data can inform tactics and training.
+          </p>
+          <p class="project-meta">// Focus: Python, data structures, basic data analysis</p>
         </article>
       </div>
     </section>
@@ -180,20 +188,26 @@
         <article class="card contact-card">
           <h3 class="card-title">reach_out()</h3>
           <p class="card-text">
-            Open to internships, freelance opportunities, hackathons, and collaborations on developer tools or backend-heavy products.
+            Open to internships, projects, hackathons, and collaborations around backend systems, developer tools, and performance-focused applications.
           </p>
           <ul class="contact-list">
             <li>
               <span class="kv-key">email</span>
-              <a href="mailto:{{EMAIL_ADDRESS}}" class="kv-value link-inline">{{EMAIL_ADDRESS}}</a>
+              <a href="mailto:niranjansajikumar@gmail.com" class="kv-value link-inline">
+                niranjansajikumar@gmail.com
+              </a>
             </li>
             <li>
               <span class="kv-key">github</span>
-              <a href="{{GITHUB_URL}}" target="_blank" rel="noopener" class="kv-value link-inline">{{GITHUB_URL}}</a>
+              <a href="https://github.com/consolegamer159-bot" target="_blank" rel="noopener" class="kv-value link-inline">
+                https://github.com/consolegamer159-bot
+              </a>
             </li>
             <li>
               <span class="kv-key">linkedin</span>
-              <a href="{{LINKEDIN_URL}}" target="_blank" rel="noopener" class="kv-value link-inline">{{LINKEDIN_URL}}</a>
+              <a href="https://www.linkedin.com/in/niranjan-s-136a73322/" target="_blank" rel="noopener" class="kv-value link-inline">
+                https://www.linkedin.com/in/niranjan-s-136a73322/
+              </a>
             </li>
           </ul>
         </article>
@@ -201,9 +215,9 @@
         <article class="card contact-card">
           <h3 class="card-title">status.log</h3>
           <ul class="status-list">
-            <li><span class="status-dot status-available"></span> Available for projects</li>
-            <li><span class="status-dot status-learning"></span> Currently learning advanced systems design</li>
-            <li><span class="status-dot status-open"></span> Open to remote & hybrid roles</li>
+            <li><span class="status-dot status-available"></span> Actively learning and building projects</li>
+            <li><span class="status-dot status-learning"></span> Exploring system design and high-performance backends</li>
+            <li><span class="status-dot status-open"></span> Open to remote and on-site opportunities</li>
           </ul>
         </article>
       </div>
@@ -211,7 +225,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> {{FULL_NAME}} • Crafted in a dark terminal.</p>
+    <p>&copy; <span id="year"></span> Niranjan S • Crafted in a dark terminal.</p>
   </footer>
 
   <script>
