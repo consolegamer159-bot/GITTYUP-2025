@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{FULL_NAME}} • Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav sticky">
+      <div class="nav-left">
+        <a href="#hero" class="nav-logo">&gt;_ {{FULL_NAME}}</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">about()</a></li>
+        <li><a href="#skills">skills()</a></li>
+        <li><a href="#projects">projects()</a></li>
+        <li><a href="#contact">contact()</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Intro -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-prefix">console.log("Hello, world");</p>
+          <h1 class="hero-title">{{FULL_NAME}}</h1>
+          <h2 class="hero-role">{{CURRENT_ROLE}}</h2>
+          <p class="hero-tagline">{{SHORT_TAGLINE}}</p>
+          <p class="hero-meta">
+            <span class="bullet"></span>
+            <span class="hero-location">{{LOCATION}}</span>
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">view_projects()</a>
+            <a href="#contact" class="btn btn-ghost">ping_me()</a>
+          </div>
+        </div>
+        <div class="hero-terminal card">
+          <div class="terminal-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">~/whoami</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> cat profile.txt</p>
+            <p><span class="caret-line">name:</span> {{FULL_NAME}}</p>
+            <p><span class="caret-line">role:</span> {{CURRENT_ROLE}}</p>
+            <p><span class="caret-line">location:</span> {{LOCATION}}</p>
+            <p><span class="caret-line">interests:</span> {{HOBBIES}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Education -->
+    <section id="about" class="section section-bordered">
+      <div class="section-header">
+        <h2 class="section-title">&gt; about_me</h2>
+        <span class="section-subtitle">// background & education</span>
+      </div>
+      <div class="grid two-columns">
+        <article class="card">
+          <h3 class="card-title">short.bio</h3>
+          <p class="card-text">
+            {{SHORT_TAGLINE}} A driven engineer focused on building reliable, performant systems and thoughtful user experiences.
+          </p>
+          <p class="card-text">
+            Passionate about {{CORE_CONCEPTS}} and applying them to real-world products with clean, maintainable code.
+          </p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">education.json</h3>
+          <ul class="kv-list">
+            <li>
+              <span class="kv-key">university</span>
+              <span class="kv-value">{{UNIVERSITY_NAME}}</span>
+            </li>
+            <li>
+              <span class="kv-key">degree</span>
+              <span class="kv-value">{{DEGREE_MAJOR}}</span>
+            </li>
+            <li>
+              <span class="kv-key">grad_year</span>
+              <span class="kv-value">{{GRAD_YEAR}}</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h2 class="section-title">&gt; skills</h2>
+        <span class="section-subtitle">// tech stack & strengths</span>
+      </div>
+
+      <div class="grid three-columns">
+        <article class="card">
+          <h3 class="card-title">languages[]</h3>
+          <p class="card-text">{{PROGRAMMING_LANGUAGES}}</p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">tools_platforms[]</h3>
+          <p class="card-text">{{FRAMEWORKS_TOOLS}}</p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">core_concepts[]</h3>
+          <p class="card-text">{{CORE_CONCEPTS}}</p>
+        </article>
+      </div>
+
+      <div class="grid two-columns skills-secondary">
+        <article class="card">
+          <h3 class="card-title">soft_skills[]</h3>
+          <p class="card-text">{{SOFT_SKILLS}}</p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">hobbies[]</h3>
+          <p class="card-text">{{HOBBIES}}</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-bordered">
+      <div class="section-header">
+        <h2 class="section-title">&gt; projects</h2>
+        <span class="section-subtitle">// selected work</span>
+      </div>
+
+      <div class="projects-list">
+        <article class="card project-card">
+          <header class="project-header">
+            <span class="project-badge">#01</span>
+            <h3 class="card-title">{{PROJECT_1_NAME}}</h3>
+          </header>
+          <p class="card-text">{{PROJECT_1_DESC}}</p>
+          <p class="project-meta">// Tech: {{PROGRAMMING_LANGUAGES}}</p>
+        </article>
+
+        <article class="card project-card">
+          <header class="project-header">
+            <span class="project-badge">#02</span>
+            <h3 class="card-title">{{PROJECT_2_NAME}}</h3>
+          </header>
+          <p class="card-text">{{PROJECT_2_DESC}}</p>
+          <p class="project-meta">// Tech: {{FRAMEWORKS_TOOLS}}</p>
+        </article>
+
+        <article class="card project-card">
+          <header class="project-header">
+            <span class="project-badge">#03</span>
+            <h3 class="card-title">{{PROJECT_3_NAME}}</h3>
+          </header>
+          <p class="card-text">{{PROJECT_3_DESC}}</p>
+          <p class="project-meta">// Focus: {{CORE_CONCEPTS}}</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <h2 class="section-title">&gt; contact</h2>
+        <span class="section-subtitle">// let’s build something</span>
+      </div>
+
+      <div class="grid two-columns contact-grid">
+        <article class="card contact-card">
+          <h3 class="card-title">reach_out()</h3>
+          <p class="card-text">
+            Open to internships, freelance opportunities, hackathons, and collaborations on developer tools or backend-heavy products.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="kv-key">email</span>
+              <a href="mailto:{{EMAIL_ADDRESS}}" class="kv-value link-inline">{{EMAIL_ADDRESS}}</a>
+            </li>
+            <li>
+              <span class="kv-key">github</span>
+              <a href="{{GITHUB_URL}}" target="_blank" rel="noopener" class="kv-value link-inline">{{GITHUB_URL}}</a>
+            </li>
+            <li>
+              <span class="kv-key">linkedin</span>
+              <a href="{{LINKEDIN_URL}}" target="_blank" rel="noopener" class="kv-value link-inline">{{LINKEDIN_URL}}</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card contact-card">
+          <h3 class="card-title">status.log</h3>
+          <ul class="status-list">
+            <li><span class="status-dot status-available"></span> Available for projects</li>
+            <li><span class="status-dot status-learning"></span> Currently learning advanced systems design</li>
+            <li><span class="status-dot status-open"></span> Open to remote & hybrid roles</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> {{FULL_NAME}} • Crafted in a dark terminal.</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    navToggle.addEventListener("click", () => {
+      navToggle.classList.toggle("is-open");
+      navLinks.classList.toggle("is-open");
+    });
+
+    // Close menu on link click (mobile)
+    navLinks.addEventListener("click", (event) => {
+      if (event.target.tagName.toLowerCase() === "a") {
+        navToggle.classList.remove("is-open");
+        navLinks.classList.remove("is-open");
+      }
+    });
+
+    // Set current year in footer
+    const yearSpan = document.getElementById("year");
+    yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
